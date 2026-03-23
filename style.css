@@ -337,7 +337,7 @@ details { cursor: pointer; }
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-4) var(--space-4);
   font-size: var(--text-sm);
   font-weight: 500;
   color: var(--color-hero-muted);
@@ -346,7 +346,10 @@ details { cursor: pointer; }
   transition: color var(--transition), border-color var(--transition), background var(--transition);
   cursor: pointer;
   text-align: center;
+  line-height: 1.3;
 }
+.reg-tab svg { display: none; }
+@media (min-width: 480px) { .reg-tab svg { display: block; } }
 .reg-tab.active {
   color: var(--color-hero-accent);
   border-bottom-color: var(--color-hero-accent);
